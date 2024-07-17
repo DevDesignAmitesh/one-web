@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ANIMATED-WEBSITE</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="output.css">
+</head>
+
+<body>
+  <!-- customize cursors -->
+  <div id="cursor" class="h-[32px] w-[32px] rounded-full bg-[#91B508] fixed z-[100]"></div>
+  <div id="blur-cursor" class="h-[350px] w-[350px] rounded-full bg-[#92b5083f] z-[9] fixed blur-3xl"></div>
+
+  <!-- fixed nav bar -->
+  <div id="nav"
+    class="fixed z-50 w-full flex justify-start items-center h-[8vw] px-[8vw] gap-[2.5vw] font-semibold uppercase">
+    <img class="h-[5vw]" src="https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/logo-white.svg">
+    <h4 class="cursor-pointer">TOPTRACER RANGE</h4>
+    <h4 class="cursor-pointer">Golf Lessons</h4>
+    <h4 class="cursor-pointer">Adventure Golf</h4>
+    <h4 class="cursor-pointer">coffee shop</h4>
+    <h4 class="cursor-pointer">leagues</h4>
+  </div>
+
+  <!-- background video -->
+  <video class="fixed z-[-1] h-full w-full object-cover object-center" autoplay loop muted
+    src="https://media.istockphoto.com/id/1280267684/video/golf.mp4?s=mp4-640x640-is&k=20&c=FNPP3fyou6_fHcu3Wd9bZ3JPEAWz-My9UOTRHmEOTyA="></video>
+
+  <!-- main content -->
+  <div id="main" class="relative">
+
+    <!-- page 1  -->
+    <div id="page1" class="h-screen flex justify-center items-center flex-col z-[10]">
+      <h1 id="heading" class="text-[8vw] font-[999]">EAT. DRINK. PLAY.</h1>
+      <h2 class="text-[1.25vw] font-[800]">WELCOME TO SIDCUP FAMILY GOLF!</h2>
+      <p class="w-[40%] text-center m-[1vw]">
+        Sidcup Family Golf is a multipurpose golf facility located in Sidcup,
+        South East London. Passionate about technology, player development and
+        making golf fun and accessible to everyone.
+      </p>
+    </div>
+
+    <!-- page 2 -->
+    <div id="page2" class="min-h-screen">
+      <div id="scroller"
+        class="whitespace-nowrap gap-[1vw] text-[6vw] font-bold overflow-x-hidden overflow-y-auto relative z-[10]">
+        <div id="scroller-in" class="uppercase inline whitespace-nowrap gap-[1vw]">
+          <h4 class="inline-block">TOPTRACER RANGE</h4>
+          <h4 class="inline-block">Golf Lessons</h4>
+          <h4 class="inline-block">Adventure Golf</h4>
+          <h4 class="inline-block">coffee shop</h4>
+          <h4 class="inline-block">leagues</h4>
+        </div>
+        <div id="scroller-in" class="uppercase inline whitespace-nowrap gap-[1vw]">
+          <h4 class="inline-block">TOPTRACER RANGE</h4>
+          <h4 class="inline-block">Golf Lessons</h4>
+          <h4 class="inline-block">Adventure Golf</h4>
+          <h4 class="inline-block">coffee shop</h4>
+          <h4 class="inline-block">leagues</h4>
+        </div>
+      </div>
+      <div id="about-us" class="h-[25vw] flex items-center justify-between px-[4vw]">
+        <img class="object-cover object-center rounded-[1vw] h-[12vw] w-[12vw]"
+          src="https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/home-about-1-300x200.jpg?strip=all&lossy=1&sharp=1&ssl=1">
+        <div id="content" class="flex items-center text-center justify-center flex-col w-[45%]">
+          <h2 class="font-[999] text-[2vw] mb-[1.5vw]">ABOUT US</h2>
+          <p class="text-[.9vw]">Home to a 46-bay, multi-tier, floodlit driving range, powered by
+            Toptracer Range technology. Complimented by a practice green and
+            bunker, coffee shop and American Golf Store. There truly is
+            something for everyone as we also boast two outdoor 18-hole
+            dinosaur themed crazy golf courses.</p>
+        </div>
+        <img class="object-cover object-center rounded-[1vw] h-[16vw] w-[12vw]"
+          src="https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/home-about-2-300x200.jpg?strip=all&lossy=1&sharp=1&ssl=1">
+      </div>
+      <div id="card-container" class="h-[30vw] relative flex items-center justify-center gap-[4vw] z-[40]">
+        <div
+          class="card card-1 h-[24vw] w-[24vw] rounded-xl relative flex items-center justify-center flex-col overflow-hidden">
+          <h2 class="font-[999] text-[2vw] mb-[1.5vw] absolute bottom-0 text-white">TOPTRACER RANGE</h2>
+          <span id="overlay"
+            class="bg-[#91B508] relative flex justify-between items-center flex-col text-center h-full w-full py-[4vw] px-[1vw] opacity-[0] hover:opacity-[1]">
+            <h2 class="font-[999] text-[2vw] mb-[1vw] text-black">TOPTRACER RANGE</h2>
+            <p class="text-black font-[500] text-[15px]">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla
+              quam molestias magni cupiditate architecto et enim quas facere
+              ipsum tempora?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum sequi nesciunt vitae rem dicta
+              voluptas.
+            </p>
+          </span>
+        </div>
+        <div
+          class="card card-2 h-[24vw] w-[24vw] rounded-xl relative flex items-center justify-center flex-col overflow-hidden">
+          <h2 class="font-[999] text-[2vw] mb-[1.5vw] absolute bottom-0 text-white">ADVENTURE GOLF</h2>
+          <span id="overlay"
+            class="bg-[#91B508] relative flex justify-between items-center flex-col text-center h-full w-full py-[4vw] px-[1vw] opacity-[0] hover:opacity-[1]">
+            <h2 class="font-[999] text-[2vw] mb-[1vw] text-black">ADVENTURE GOLF</h2>
+            <p class="text-black font-[500] text-[15px]">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla
+              quam molestias magni cupiditate architecto et enim quas facere
+              ipsum tempora?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum sequi nesciunt vitae rem dicta
+              voluptas.
+            </p>
+          </span>
+        </div>
+        <div
+          class="card card-3 h-[24vw] w-[24vw] rounded-xl relative flex items-center justify-center flex-col overflow-hidden">
+          <h2 class="font-[999] text-[2vw] mb-[1.5vw] absolute bottom-0 text-white">GOLF LESSONS</h2>
+          <span id="overlay"
+            class="bg-[#91B508] relative flex justify-between items-center flex-col text-center h-full w-full py-[4vw] px-[1vw] opacity-[0] hover:opacity-[1]">
+            <h2 class="font-[999] text-[2vw] mb-[1vw] text-black">GOLF LESSONS</h2>
+            <p class="text-black font-[500] text-[15px]">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla
+              quam molestias magni cupiditate architecto et enim quas facere
+              ipsum tempora?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum sequi nesciunt vitae rem dicta
+              voluptas.
+            </p>
+          </span>
+        </div>
+      </div>
+      <div id="green-div" class="h-[35vh] flex items-center justify-between z-[40]">
+        <img src="https://eiwgew27fhz.exactdn.com/wp-content/themes/puttosaurus/img/dots-side.svg" class="h-full">
+        <h4 class="w-[30%] text-center font-[999] text-[1.20vw] text-black"> SIGN UP FOR SIDCUP NEWS AND SPECIAL OFFERS
+          STRAIGHT TO YOUR INBOX</h4>
+        <img src="https://eiwgew27fhz.exactdn.com/wp-content/themes/puttosaurus/img/dots-side.svg" class="h-full">
+      </div>
+    </div>
+
+    <!-- page3 -->
+    <div id="page3" class="h-screen bg-black relative flex justify-center items-center">
+      <p class="w-[50%] text-center font-[999] text-[1.3vw]">
+        Excellent couple of hours, relax and enjoy in the fun. Staff were
+        accommodating, friendly and very helpful. Café on site for
+        refreshments etc. Will keep children enterntained during the holidays.
+        Worth a visit if you haven’t been.
+      </p>
+      <img id="colon1" class="h-[2.5vw] absolute left-[25%] top-[30%]"
+        src="https://eiwgew27fhz.exactdn.com/wp-content/themes/puttosaurus/img/quote-left.svg" alt="" />
+      <img id="colon2" class="h-[2.5vw] absolute right-[25%] bottom-[30%]"
+        src="https://eiwgew27fhz.exactdn.com/wp-content/themes/puttosaurus/img/quote-right.svg" alt="" />
+    </div>
+
+    <!-- page4 -->
+    <div id="page4" class="h-[50vh] flex justify-center items-center flex-col relative">
+      <h1 class="text-[5vw] font-bold z-[20] absolute bottom-[63%]">WHAT ARE YOU WAITNG FOR?</h1>
+      <div id="small-cards" class="h-full w-full z-[40] flex justify-center items-center gap-[1.5vw]">
+        <div id="small-1" class="small h-[22vh] w-[25%] rounded-2xl overflow-hidden">
+          <span id="sm-overlay" class="bg-[#91B508] h-full w-full flex justify-center items-center">
+            <h2 class="font-[999] text-black text-[2vw]">TOPTRACER RANGE</h2>
+          </span>
+        </div>
+        <div id="small-2" class="small h-[22vh] w-[25%] rounded-2xl overflow-hidden">
+          <span id="sm-overlay" class="bg-[#91B508] h-full w-full flex justify-center items-center">
+            <h2 class="font-[999] text-black text-[2vw]">ADVENTURE GOLF</h2>
+          </span>
+        </div>
+        <div id="small-3" class="small h-[22vh] w-[25%] rounded-2xl overflow-hidden">
+          <span id="sm-overlay" class="bg-[#91B508] h-full w-full flex justify-center items-center">
+            <h2 class="font-[999] text-black text-[2vw]">GOLF LESSONS</h2>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div id="footer" class="h-[60vh] flex items-center justify-between z-[40] px-[10vw] py-[3vw] flex-col">
+      <div id="info" class="flex items-center justify-between w-full">
+        <div id="brands" class="flex justify-center items-start flex-col gap-[4vw]">
+          <img class="h-[7vw]" src="https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/logo-white.svg">
+          <div id="co-brands">
+            <i class="fa-brands fa-square-facebook text-[2vw] text-black"></i>
+            <i class="fa-brands fa-square-instagram text-[2vw] text-black"></i>
+          </div>
+        </div>
+        <p class="text-black font-[999] text-[2vw]">
+          TOPTRACER RANGE <br>
+          CRAZY GOLF <br>
+          CAFÉ
+        </p>
+        <p class="text-black font-[999] text-[2vw]">
+          EVENTS <br>
+          GOLF LESSONS <br>
+          CONTACT US
+        </p>
+        <p class="text-black font-[700] text-[1.2vw]">
+          A20, SIDCUP BYPASS <br>
+          CHISLEHURST <br>
+          KENT <br>
+          BR7 6RP <br>
+  
+          TEL: <span class="font-[999] text-black">0208 309 0181</span> <br>
+  
+          <span class="font-[999] text-black text-[1.4vw]">GET DIRECTIONS</span>
+        </p>
+      </div>
+      <div id="orignal" class="flex justify-between items-center w-full">
+        <p>Copyright © 2023 Adventure Leisure Ltd. All rights reserved.
+          <span id="hover">Privacy Policy |</span>
+          <span id="hover">Terms And Conditions |</span>
+          <span id="hover">Gender Pay Gap</span>
+        </p>
+          <p id="hover" class="bg-white text-[#91B508]">
+            Web Design London
+          </p>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+    integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
